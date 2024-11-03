@@ -1,0 +1,7 @@
+{
+  "name": "todoneo-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

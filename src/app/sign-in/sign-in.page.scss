@@ -1,0 +1,327 @@
+// Fonts
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.Roboto-social{
+  font-family: "Roboto";
+  font-weight: 500;
+  size: 20px;
+  margin-top: 1.5%;
+  padding-bottom: 1%;
+}
+
+// Main content area
+#main-content {
+  background-color: #ffffff;
+  --ion-background-color: #ffffff;
+  overflow: auto;
+}
+
+// Wellcome mensage area
+
+
+.welcome-text {
+  width: 100%;
+  height: 12%;
+  color: #505050;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: Poppins;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1.5em;
+  text-align: center;
+}
+// Ion buttons general configuration
+
+ion-button,
+ion-item {
+  --border-color: none;
+  --border-width: 0px !important;
+  --background: none;
+  --border-style: none;
+}
+
+// Social login area
+ion-list{
+  --ion-item-background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-button {
+  margin: 0 auto;
+
+  ion-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.14em;
+  }
+  .facebook-login {
+
+    background-color: #1877f2;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0.1px 0.1px rgb(0, 0, 0);
+    height: 4em;
+    width: 23.5em;
+    margin-bottom: 0.8em;
+  }
+
+  .google-login {
+
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 8px;
+    width: 23.5em;
+    height: 4em;
+    box-shadow: 0.1px 0.1px rgb(0, 0, 0);
+    padding-bottom: 1.5%;
+    margin-bottom: 0.5em;
+
+    .icon-svg-google {
+      display: flexbox;
+      background: url("../../assets/logos/google.svg") no-repeat;
+      height: 50px;
+      width: 50px;
+      margin: 10% -7% 1%;
+    }
+  }
+
+  .apple-login {
+
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 8px;
+    width: 23.5em;
+    height: 4em;
+    box-shadow: 0.1px 0.1px rgb(0, 0, 0);
+    margin-bottom: 0.5em;
+  }
+}
+ion-card-content{
+  --border-color: none;
+  margin: 0;
+}
+
+// Separation area
+.line-main{
+
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  width: 328px;
+  margin: 0 auto;
+
+  div.line{
+    border-bottom: 2px solid #828C97;
+    width: 100%;
+    height: 0;
+  }
+
+  p{
+    font-size: 15px;
+    color: #828C97;
+  }
+
+
+}
+
+// Form login area
+
+.form-text{
+  color: #505050;
+  font-size: 20px;
+  margin: 0 auto;
+  width: 17.7em;
+  margin-top: 1em;
+  --border-style: none;
+
+  ion-input.input-form{
+    color: #000000;
+    border-radius: 6px;
+    margin-top: 0.5em;
+    border: 1px solid #000000;
+    height: 3em;
+    border-radius: 0.4em;
+
+  }
+
+  ion-label{
+    font-size: large;
+  }
+  .login-button {
+    font-weight: 500;
+    font-size: 1.125em;
+    background-color: #3D31C1;
+    color: #ffffff;
+    border-radius: 1em;
+    width: 26em;
+    height: 2.7em;
+    border-radius: 0.4em;
+
+
+  }
+  ion-text.create-account{
+    color: #505050;
+    font-size: 14px;
+    position: relative;
+  }
+
+    a.reforward-password{
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color:#3D31C1;
+      text-align: center;
+      font-size: 14px;
+
+    }
+
+
+
+}
+
+// create teacher accout area
+
+
+.create-account{
+  display: flex;
+  justify-content: center;
+  ion-text{
+    color: #000000;
+    font-size: 14px;
+    margin-top: 1em;
+    text-align: center;
+
+
+  }
+
+  a{
+    text-decoration: none;
+    color: #3D31C1;
+  }
+
+
+}
+
+.teacher-register{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: #3D31C1;
+  margin: 1em 0;
+  font-size: 14px;
+  a{
+    font-size: 14px;
+      margin-top: 1em;
+      text-decoration: none;
+  }
+}

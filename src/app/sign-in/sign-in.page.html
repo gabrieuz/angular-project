@@ -1,0 +1,105 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet"
+/>
+<ion-app>
+<app-menu></app-menu>
+
+<ion-content class="ion-page" id="main-content">
+  <app-toolbar></app-toolbar>
+
+  <!--  Wellcome mensage area -->
+  <ion-card-content class="welcome-text">
+    <ion-text class="poppins-semibold">Seja bem-vindo<br />de volta!</ion-text>
+  </ion-card-content>
+
+  <!-- Social login area -->
+  <ion-list class="social-button">
+    <ion-button class="facebook-login no-ripple" expand="block">
+      <ion-text class="roboto-medium">Login com facebook</ion-text>
+      <ion-icon slot="start" name="logo-facebook"></ion-icon
+    ></ion-button>
+
+    <ion-button class="google-login no-ripple" expand="block">
+      <ion-text slot="end" class="roboto-medium"
+        >Login com google</ion-text
+      >
+      <div slot="start" class="icon-svg-google"></div>
+    </ion-button>
+
+    <ion-button class="apple-login no-ripple" expand="block">
+      <ion-text class="roboto-medium">Login com apple</ion-text>
+      <ion-icon
+        slot="start"
+        style="color: #ffffff"
+        name="logo-apple"
+      ></ion-icon
+    ></ion-button>
+  </ion-list>
+
+  <!-- Separetion line -->
+  <div class="line-main">
+    <div class="line"></div>
+    <p>ou</p>
+    <div class="line"></div>
+  </div>
+
+  <!--Form login area -->
+
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form-container ion-justify-content-center">
+    <ion-item class="form-text">
+      <ion-label position="stacked">Endereço de e-mail</ion-label>
+      <ion-input
+        formControlName="email"
+        class="input-form"
+        type="email"
+        aria-label="Email"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item class="form-text">
+      <ion-label position="stacked">Senha</ion-label>
+      <ion-input
+        formControlName="password"
+        class="input-form"
+        type="password"
+        aria-label="password"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item class="form-text">
+      <ion-button class="login-button">
+        <ion-text class="Roboto-social">Login</ion-text>
+      </ion-button>
+    </ion-item>
+
+    <!-- create teacher accout area -->
+    <ion-item class="form-text">
+      <ion-grid>
+        <ion-row class="ion-justify-content-center">
+          <ion-col size="12">
+            <a href="" class="reforward-password">Esqueceu a senha?</a>
+          </ion-col>
+          <ion-col size="12">
+            <ion-text class="create-account"
+              >Não tem uma conta?<a href="">Registre-se aqui</a></ion-text
+            >
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </form>
+
+  <div class="line-main">
+    <div class="line"></div>
+  </div>
+
+  <a href="" class="teacher-register"
+    >É um instrutor? Faça login na<br />Área do instrutor</a
+  >
+
+  <!-- <ion-content class="ion-padding"> padding </ion-content> -->
+</ion-content>
+</ion-app>

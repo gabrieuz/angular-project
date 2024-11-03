@@ -1,0 +1,143 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+  rel="stylesheet"
+/>
+
+<ion-app>
+  <app-menu></app-menu>
+
+  <div class="ion-page" id="main-content">
+    <app-toolbar></app-toolbar>
+
+    <ion-text class="welcome-text poppins-semibold"
+      >Inicie sua<br />jornada aqui!</ion-text
+    >
+    <!-- Social register area  -->
+    <ion-list class="social-button">
+      <ion-button class="facebook-login no-ripple" expand="block">
+        <ion-text class="roboto-medium">Registrar-se com facebook</ion-text>
+        <ion-icon slot="start" name="logo-facebook"></ion-icon
+      ></ion-button>
+
+      <ion-button class="google-login no-ripple" expand="block">
+        <ion-text slot="end" class="roboto-medium"
+          >Registrar-se com google</ion-text
+        >
+        <div slot="start" class="icon-svg-google"></div>
+      </ion-button>
+
+      <ion-button class="apple-login no-ripple" expand="block">
+        <ion-text class="roboto-medium">Registrar-se com apple</ion-text>
+        <ion-icon
+          slot="start"
+          style="color: #ffffff"
+          name="logo-apple"
+        ></ion-icon
+      ></ion-button>
+    </ion-list>
+
+    <!-- Division line  -->
+    <div class="line-main">
+      <div class="line"></div>
+      <p>ou</p>
+      <div class="line"></div>
+    </div>
+
+    <!-- Form register area -->
+
+    <form
+      [formGroup]="registerForm"
+      (ngSubmit)="onSubmit()"
+      class="form-container ion-justify-content-center"
+    >
+      <ion-item>
+        <ion-label class="form-label" position="stacked"
+          >Nome completo</ion-label
+        >
+        <ion-input class="form-input" formControlName="fullName"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="form-label" position="stacked"
+          >Endereço de e-mail</ion-label
+        >
+        <ion-input
+          class="form-input"
+          formControlName="email"
+          type="email"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="form-label" position="stacked">Senha</ion-label>
+        <ion-input
+          class="form-input"
+          formControlName="password"
+          type="password"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="form-label" position="stacked"
+          >Confirmar senha</ion-label
+        >
+        <ion-input
+          class="form-input"
+          formControlName="confirmPassword"
+          type="password"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-button class="register-button" type="submit">
+          <ion-text class="register-button-text">Criar conta</ion-text>
+        </ion-button>
+      </ion-item>
+
+      <ion-item>
+        <ion-grid>
+          <ion-row class="ion-justify-content-center">
+            <ion-col size="12" class="ion-text-center">
+              <ion-text class="terms"
+                >Ao criar uma conta você concorda com os<br/><a href=""
+                  >Termos e condições</a
+                ></ion-text
+              >
+            </ion-col>
+            <ion-col size="12" class="ion-text-center">
+              <ion-text 
+                >Ja tem uma conta?<a class="login" href=""> Faça login aqui</a
+                ></ion-text
+              >
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </form>
+
+    <!-- Separetor line  -->
+    <div class="line-main">
+      <div class="line"></div>
+    </div>
+
+    <ion-grid >
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="12" class="ion-text-center">
+          <a href="" class="teacher-register roboto-medium"
+        >É um instrutor? Faça login na<br/>Área do instrutor</a
+      >
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-content class="ion-padding"></ion-content>
+  </div>
+</ion-app>

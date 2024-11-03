@@ -1,0 +1,162 @@
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#main-content {
+  background-color: #ffffff;
+  --ion-background-color: #ffffff;
+  overflow: auto;
+}
+
+.welcome-text {
+  width: 100%;
+  height: 12%;
+  color: #000000;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: Poppins;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1.5em;
+  text-align: center;
+}
+ion-button,
+ion-item {
+  --border-color: none;
+  --border-width: 0px !important;
+  --background: none;
+  --border-style: none;
+}
+ion-list{
+  --ion-item-background: none;
+}
+
+.social-button {
+  margin: 0 auto;
+  ion-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.14em;
+  }
+  .facebook-login {
+    align-self: center;
+    background-color: #1877f2;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0.1px 0.1px rgb(0, 0, 0);
+    height: 4em;
+    width: 23.5em;
+    margin-bottom: 0.8em;
+  }
+
+  .google-login {
+    align-self: center;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 8px;
+    width: 23.5em;
+    height: 4em;
+    box-shadow: 0.1px 0.1px rgb(0, 0, 0);
+    padding-bottom: 1.5%;
+    margin-bottom: 0.5em;
+
+    .icon-svg-google {
+      display: flexbox;
+      background: url("../../assets/logos/google.svg") no-repeat;
+      height: 50px;
+      width: 50px;
+      margin: 10% -7% 1%;
+    }
+  }
+
+  .apple-login {
+    align-self: center;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 8px;
+    width: 23.5em;
+    height: 4em;
+    box-shadow: 0.1px 0.1px rgb(0, 0, 0);
+    margin-bottom: 0.5em;
+  }
+}
+// _icons-svg.scss
+
+.line-main {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  width: 328px;
+  margin: 0 auto;
+
+  div.line {
+    border-bottom: 1px solid #828c97;
+    width: 100%;
+    height: 0;
+  }
+
+  p {
+    font-size: 12px;
+    color: #828c97;
+  }
+}
+
+.form-container {
+  --border-style: none;
+  .form-label {
+    color: #505050;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1em;
+  }
+  .form-input {
+    color: #000000;
+    border-radius: 6px;
+    margin-top: 0.5em;
+    border: 1px solid #000000;
+    height: 3em;
+    border-radius: 0.4em;
+  }
+
+  .register-button {
+    font-size: 1.4em;
+    background-color: #3d31c1;
+    color: #ffffff;
+    border-radius: 1em;
+    width: 26em;
+    height: 3em;
+    border-radius: 0.4em;
+    margin: 0 auto;
+    margin-top: 1em;
+
+    .register-button-text {
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-size: 0.75em;
+    }
+  }
+
+  .terms {
+    a {
+      color: #3d31c1;
+    }
+  }
+
+  .login {
+    color: #3d31c1;
+    text-decoration: underline;
+  }
+}
+
+.teacher-register {
+  text-decoration: none;
+  color: #3d31c1;
+}
